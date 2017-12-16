@@ -1,0 +1,4 @@
+﻿1. สร้าง Controller ชื่อว่า Post.php
+2. สร้าง View ชื่อว่า posts/index.php
+3. load library session
+4. load helper form, url 
