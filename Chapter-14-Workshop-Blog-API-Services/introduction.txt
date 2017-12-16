@@ -1,0 +1,4 @@
+﻿1. สร้าง Controller ชื่อว่า Api.php
+2. เปิด Extension ชื่อว่า extension=php_soap.dll ในไฟล์ php.ini
+3. Restart Apache
+4. 
