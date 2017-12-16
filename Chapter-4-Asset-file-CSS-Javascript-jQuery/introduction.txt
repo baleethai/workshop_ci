@@ -1,6 +1,7 @@
-﻿1. สร้าง Controller ชื่อว่า Blog.php
-2. สร้าง View ชื่อ blog_view.php
+﻿## Chapter-4-Asset-file-CSS-Javascript-jQuery
 
+1. สร้าง Controller ชื่อว่า Blog.php
+2. สร้าง View ชื่อ blog_view.php
 
 CSS
  <link href="<?php echo base_url()."template/"?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

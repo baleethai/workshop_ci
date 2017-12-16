@@ -1,4 +1,5 @@
-﻿1. สร้าง Controller ชื่อว่า Blog.php ใน folder application/controllers/Blog.php
+﻿## Chapter-3-Controller-View
+1. สร้าง Controller ชื่อว่า Blog.php ใน folder application/controllers/Blog.php
 2. สร้าง method index() แล้วโหลด View ด้วยคำส่ง $this->load->view('blogs/index');
 3. สร้าง View ชื่อว่า blogs/index.php ใน folder application/views/blogs/index.php 
 

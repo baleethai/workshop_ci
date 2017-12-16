@@ -1,4 +1,5 @@
-﻿1. Folder config \Workshop\Chapter-2-Configuration\codeigniter3\application\config
+﻿## Chapter-2-Configuration
+1. Folder config \Workshop\Chapter-2-Configuration\codeigniter3\application\config
 	1.1 autoload โหลด helper, library ต่างๆอัตโนมัติ
 	1.2 config ตั้งค่าต่างๆของระบบ
 	1.3 database ตั้งค่าการเชื่อมต่อฐานข้อมูล

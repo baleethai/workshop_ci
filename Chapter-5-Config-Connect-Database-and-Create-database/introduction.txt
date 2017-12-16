@@ -1,4 +1,5 @@
-﻿1. เข้าไปที่ http://localhost/phpmyadmin  หรือ http://127.0.0.1/phpmyadmin
+﻿## Chapter-5-Config-Connect-Database-and-Create-database
+1. เข้าไปที่ http://localhost/phpmyadmin  หรือ http://127.0.0.1/phpmyadmin
 2. สร้าง Database ชื่อว่า "blogs"
 3. Import blogs.sql เข้า Database
 4. เข้าไปที่ application/config/database.php 
