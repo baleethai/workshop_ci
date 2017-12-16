@@ -1,21 +1,22 @@
-﻿1. สร้าง Database เข้าไปที่ http://localhost/phpmyadmin
-
+﻿1. เข้าไปที่ http://localhost/phpmyadmin  หรือ http://127.0.0.1/phpmyadmin
 2. สร้าง Database ชื่อว่า "blogs"
-
-3. สร้าง Table ชื่อว่า users (id, name, email, password, created)
-
-4. เพิ่ม username, password, database ลงไปที่ config/database.php
-
-5. สร้าง model ชื่อว่า "user_model" เพื่อเชื่อมต่อกับ Database
-
-6. load database ด้วยคำสั่ง $this->load->database();
-
-7. load model ด้วยคำสั่ง $this->load->model('user_model')
-
-8. Query ข้อมูลด้วยคำสั่ง   $this->user_model->get_users();
-
-9. ส่งตัวแปรไปที่ view
-
-10. Loop ข้อมูลออกมา
+3. Import blogs.sql เข้า Database
+4. เข้าไปที่ application/config/database.php 
+    - ใส่ค่า username
+    - ใส่ค่า password
+    - ใส่ค่า dbname
+5. สร้าง model ชื่อว่า "user_model" ที่ application/models/user_model เพื่อเชื่อมต่อฐานข้อมูล
+    5.1 เพิ่ม method ชื่อว่า get_users()
+    5.2 get user ด้วยคำสั่ง $query = $this->db->get('users');
+    5.3 และส่งค่าออกไป return $query->result();
+ุ6. สร้าง Controller ชื่อว่า User.php ที่ application/controllers/User.php
+    6.1 ที่ routes ให้ set default_controller เป็น user เพื่อเรียก user เป็นหน้าแรก
+7. สร้าง method index()
+8. load helper --> $this->load->helper('url');
+9. load database -->  $this->load->database();
+10. load model --> $this->load->model('user_model');
+11. เรียกใช้ $users = $this->user_model->get_users(); และส่งค่าออกไปทาง view
+12. สร้าง View ที่ users/index.php
+13. Query data ใส่ users/index.php และ Loop ข้อมูลออกมา
 
 
