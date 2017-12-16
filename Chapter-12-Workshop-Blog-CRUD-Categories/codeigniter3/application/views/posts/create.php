@@ -9,6 +9,13 @@
 <body>
     <h1>Create Blog</h1>
     <?php echo form_open_multipart('post/create'); ?> 
+    <p>Category : 
+        <select name="category_id">
+            <?php foreach($categories as $category) { ?>
+            <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
+            <?php } ?>
+        </select>
+    </p>
     <p>Title : <input type="text" name="title" value=""></p>
     <p>Description : <textarea rows="4" name="description"></textarea></p>
     <p>status : 

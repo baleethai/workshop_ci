@@ -8,7 +8,7 @@ class Post extends CI_Controller {
         parent::__construct();
         $this->load->helper(array('form', 'url'));
         $this->load->database();
-        $this->load->model('post_model');
+        $this->load->model(array('post_model', 'category_model'));
     }
 
     public function index()
@@ -25,7 +25,9 @@ class Post extends CI_Controller {
             $this->post_model->create();
             redirect('post');
         }
-        $this->load->view('posts/create');
+
+        $data['categories'] = $this->category_model->get_categories();
+        $this->load->view('posts/create', $data);
     }
 
     public function edit($id)
@@ -35,6 +37,7 @@ class Post extends CI_Controller {
             redirect('post');
         }
 
+        $data['categories'] = $this->category_model->get_categories();
         $data['post'] = $this->post_model->get_post_by_id($id);
         $this->load->view('posts/edit', $data);
     }
