@@ -1,0 +1,12 @@
+﻿1. สร้าง Controller ชื่อว่า Blog.php
+
+2. สร้าง View ชื่อ blog/index.php
+
+3. สร้าง Folder "assets" และสร้าง Folder ด้านใน css, js, images
+
+4. นำไฟล์ bootstrap 4 วางไว้ทั้ง css, js
+
+5. Inspect ดูเพื่อตรวจสอบการเรียกไฟล์ ถูกต้องหรือไม่ ?
+
+
+* คำสั่งที่ใช้ base_url() เป็น helper ของ  ci

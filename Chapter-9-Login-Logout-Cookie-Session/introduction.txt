@@ -1,0 +1,10 @@
+﻿1. สร้าง Controller ชื่อว่า Login.php
+2. สร้าง View ชื่อว่า login/index.php
+3. load library session
+4. load helper form, url
+5. Login ด้วยคำสั่ง $this->session->set_userdata('logged_in', $data['email']);
+6. สร้างหน้า success
+7. เรียกดูคำสั่ง $this->session->userdata('logged_in')
+8. check database ว่ามีอยู่หรือไม่ ? ($this->load->library('encryption'))
+
+ 

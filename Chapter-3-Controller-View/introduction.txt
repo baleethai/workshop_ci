@@ -1,0 +1,8 @@
+﻿1. สร้าง Controller ชื่อว่า Blog.php ใน folder 
+http://localhost/codeigniter3/application/controllers/Blog.php
+
+
+2. สร้าง View ชื่อว่า blogs/index.php
+ที่ folder 
+http://localhost/codeigniter3/application/views/blogs/index.php
+

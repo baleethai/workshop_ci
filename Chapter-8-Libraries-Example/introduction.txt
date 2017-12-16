@@ -1,0 +1,15 @@
+﻿1. สร้าง Controller ชื่อว่า User.php
+2. load library "Form Validation" ด้วยคำสั่ง  $this->load->library('form_validation');
+3. load library "Form" และ "Url" ด้วยคำสั่ง $this->load->helper(array('form', 'url'));
+4. สร้าง View ชื่อว่า "users/create.php"
+5. เปลี่ยนการเปิด Form เป็น 
+    <?php echo form_open('user/create'); ?> 
+    และใส่ error code <?php echo validation_errors(); ?>
+6. เพิ่ม Validation
+    - $this->form_validation->set_rules('name', 'Name', 'required');
+    - $this->form_validation->set_rules('email', 'Email', 'required');
+    - $this->form_validation->set_rules('password', 'Password', 'required');
+8. เช็คการทำงาน $this->form_validation->run();
+9. ถ้า == TRUE ให้เพิ่มข้อมูล แล้ว Redirect ไปที่หน้า User
+10. ถ้าไม่ผ่านให้โหลดหน้าเดิม
+ 

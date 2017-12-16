@@ -1,0 +1,21 @@
+﻿1. สร้าง Database เข้าไปที่ http://localhost/phpmyadmin
+
+2. สร้าง Database ชื่อว่า "blogs"
+
+3. สร้าง Table ชื่อว่า users (id, name, email, password, created)
+
+4. เพิ่ม username, password, database ลงไปที่ config/database.php
+
+5. สร้าง model ชื่อว่า "user_model" เพื่อเชื่อมต่อกับ Database
+
+6. load database ด้วยคำสั่ง $this->load->database();
+
+7. load model ด้วยคำสั่ง $this->load->model('user_model')
+
+8. Query ข้อมูลด้วยคำสั่ง   $this->user_model->get_users();
+
+9. ส่งตัวแปรไปที่ view
+
+10. Loop ข้อมูลออกมา
+
+

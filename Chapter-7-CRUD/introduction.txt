@@ -1,0 +1,25 @@
+﻿1. สร้าง Database เข้าไปที่ http://localhost/phpmyadmin
+
+2. สร้าง Database ชื่อว่า "posts"
+
+3. สร้าง Table ชื่อว่า posts (id, title, description, author, view, image, status, created)
+
+4. สร้าง Table ชื่อว่า comments (id, post_id, name, message, status, created)
+
+5. สร้าง model ชื่อว่า "post_model" เพื่อเชื่อมต่อกับ Database
+
+6. สร้าง model ชื่อว่า "comment_model" เพื่อเชื่อมต่อกับ Database
+
+7. สร้าง Controller ชื่อว่า Post.php
+
+8. load helper (url, database)
+
+9. สร้าง View ชื่อว่า posts/index.php
+
+10. Query ข้อมูล
+
+
+* Mock data http://www.mockaroo.com/
+* https://www.codeigniter.com/user_guide/libraries/encryption.html
+
+
