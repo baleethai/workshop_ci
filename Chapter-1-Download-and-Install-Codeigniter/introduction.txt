@@ -1,30 +1,21 @@
 ﻿1. ดาวน์โหลดและติดตั้ง Xampp (Version 7.1.11)
 URL : https://www.apachefriends.org/index.html
-
-
 2. ดาวน์โหลดและติดตั้ง Visual Studio
 URL : https://code.visualstudio.com/
-
-
 3. แนะนำการติดตั้ง Extension ของ Visual Studio
 	3.1 PHP IntelliSense
-	3.1 TSlint
-
+	3.1 Emmet
 4.  เปิด Browser แล้วเรียก http://127.0.0.1 หรือ http://localhost
-
 5. เรียก PHPMyadmin
-http://127.0.0.1/phpmyadmin/ หรือ http://localhost/phpmyadmin
-
-
+	http://127.0.0.1/phpmyadmin/ หรือ 
+	http://localhost/phpmyadmin
 6. สร้างไฟล์ info.php ที่ Folder D:\xampp\htdocs\php\info.php
-แล้วเรียก http://127.0.0.1/php/info.php
-หรือ http://locahost/php/info.php
-จะแสดง version php และรายละเอียด extension ต่างๆของ php
-
+	เรียก http://127.0.0.1/php/info.php
+	หรือ http://locahost/php/info.php
+	จะแสดง version php และรายละเอียด extension ต่างๆของ php
 7. ดาวน์โหลด Codeigniter ที่เว็บ https://codeigniter.com/
-เวอร์ชั่นปัจจุบัน CodeIgniter-3.1.6 แล้ว rename folder เป็น codeigniter3
-นำไปวางไว้ที่ Folder D:\xampp\htdocs\codeigniter3
-
+	เวอร์ชั่นปัจจุบัน CodeIgniter-3.1.6 แล้ว rename folder เป็น codeigniter3
+	นำไปวางไว้ที่ Folder D:\xampp\htdocs\codeigniter3
 8. เปิด Browser แล้วเรียก http://127.0.0.1/codeigniter3 หรือ http://localhost/codeigniter3
-จะเจอหน้า welcome ของ codeigniter 3
+	จะเจอหน้า welcome ของ codeigniter 3
 
