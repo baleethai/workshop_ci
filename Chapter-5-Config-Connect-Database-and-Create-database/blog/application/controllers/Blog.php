@@ -5,18 +5,17 @@ class Blog extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('blog_view');
+		$this->load->view('blog/index');
     }
-    public function detail() {
-        $this->load->view('blog_detail_view');
+
+    public function create()
+    {
+        $this->load->view('blog/create');
     }
-    public function post(){
-        $this->load->view('blog_post_view');
+
+    public function detail()
+    {
+        $this->load->view('blog/detail');
     }
-    public function category(){
-        $this->load->view('blog_cat_view');
-    }
-    public function comment(){
- 
-    }
+    
 }

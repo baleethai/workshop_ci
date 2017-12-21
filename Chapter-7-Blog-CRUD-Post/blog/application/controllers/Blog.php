@@ -8,27 +8,54 @@ class Blog extends CI_Controller {
         $this->load->database();
         $this->load->model('post_model');
         $data['posts'] = $this->post_model->get_posts();
-		$this->load->view('blog_view', $data);
-    }
-    
-    public function detail() {
-        $this->load->view('blog_detail_view');
+		$this->load->view('blog/index', $data);
     }
 
-    public function post(){
-        $this->load->helper('form');
+    public function create()
+    {
+        $this->load->helper(array('form', 'url'));
+        $this->load->database();
+        $this->load->model('post_model');
 
         if ($this->input->post()) {
-            $this->load->model('post_model');
-            exit;
+            $this->post_model->create();
+            redirect('blog');
         }
 
-        $this->load->view('blog_post_view');
+        $this->load->view('blog/create');
     }
-    public function category(){
-        $this->load->view('blog_cat_view');
+
+    public function edit($id)
+    {
+        $this->load->helper(array('form', 'url'));
+        $this->load->database();
+        $this->load->model('post_model');
+
+        if ($this->input->post()) {
+            $this->post_model->edit($id);
+            redirect('blog');
+        }
+
+        $data['post'] = $this->post_model->get_post_by_id($id);
+        $this->load->view('blog/edit', $data);
     }
-    public function comment(){
- 
+
+
+    public function detail($id)
+    {
+        $this->load->helper(array('form', 'url'));
+        $this->load->database();
+        $this->load->model('post_model');
+        $data['post'] = $this->post_model->get_post_by_id($id);
+        $this->load->view('blog/detail', $data);
     }
+
+    public function delete($id)
+    {
+        $this->load->database();
+        $this->load->model('post_model');
+        $this->post_model->delete($id);
+        redirect('blog');
+    }
+    
 }

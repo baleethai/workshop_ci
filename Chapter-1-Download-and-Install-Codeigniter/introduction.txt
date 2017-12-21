@@ -22,8 +22,8 @@ URL : https://code.visualstudio.com/
 	จะแสดง version php และรายละเอียด extension ต่างๆของ php
 
 7. ดาวน์โหลด Codeigniter ที่เว็บ https://codeigniter.com/
-	เวอร์ชั่นปัจจุบัน CodeIgniter-3.1.6 แล้ว rename folder เป็น codeigniter3
-	นำไปวางไว้ที่ Folder D:\xampp\htdocs\codeigniter3
+	เวอร์ชั่นปัจจุบัน CodeIgniter-3.1.6 แล้ว rename folder เป็น blog
+	นำไปวางไว้ที่ Folder D:\xampp\htdocs\blog
 
-8. เปิด Browser แล้วเรียก http://127.0.0.1/codeigniter3 หรือ http://localhost/codeigniter3
+8. เปิด Browser แล้วเรียก http://127.0.0.1/blog หรือ http://localhost/blog
 	จะเจอหน้า welcome ของ codeigniter 3

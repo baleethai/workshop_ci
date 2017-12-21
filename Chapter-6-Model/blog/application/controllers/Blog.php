@@ -8,19 +8,17 @@ class Blog extends CI_Controller {
         $this->load->database();
         $this->load->model('post_model');
         $data['posts'] = $this->post_model->get_posts();
-		$this->load->view('blog_view', $data);
+		$this->load->view('blog/index', $data);
+    }
+
+    public function create()
+    {
+        $this->load->view('blog/create');
+    }
+
+    public function detail()
+    {
+        $this->load->view('blog/detail');
     }
     
-    public function detail() {
-        $this->load->view('blog_detail_view');
-    }
-    public function post(){
-        $this->load->view('blog_post_view');
-    }
-    public function category(){
-        $this->load->view('blog_cat_view');
-    }
-    public function comment(){
- 
-    }
 }

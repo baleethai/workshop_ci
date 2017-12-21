@@ -1,11 +1,10 @@
 ﻿## Chapter-2-Configuration
-1. Folder config \Workshop\Chapter-2-Configuration\codeigniter3\application\config
+1. Folder config \Workshop\Chapter-2-Configuration\blog\application\config
 	1.1 autoload โหลด helper, library ต่างๆอัตโนมัติ
 	1.2 config ตั้งค่าต่างๆของระบบ
 	1.3 database ตั้งค่าการเชื่อมต่อฐานข้อมูล
 	1.4 routes สร้างเส้นทางใหม่
 	1.5 user_agents เอาไว้เช็คแต่ละ device
-
 
 	* defined('BASEPATH') OR exit('No direct script access allowed');
 	ป้องกันการเข้าตรงๆ

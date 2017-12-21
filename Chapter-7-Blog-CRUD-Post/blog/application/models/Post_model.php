@@ -31,21 +31,20 @@ class Post_model extends CI_model {
                 $data['image'] = $result_upload['file_name'];
             }
         }
-
+        $data['author'] = 'Workshop';
         $this->db->insert('posts', $data);
     }
 
     public function edit($id)
     {
         $data = $this->input->post();
-
         if ($_FILES['userfile']['name']) {
             $filename = time();
             $config['upload_path'] = './uploads/';
             $config['allowed_types'] = 'gif|jpg|png';
-            $config['max_size'] = '100';
-            $config['max_width']  = '1024';
-            $config['max_height']  = '768';;
+            // $config['max_size'] = '100';
+            // $config['max_width']  = '1024';
+            // $config['max_height']  = '768';;
             $config['remove_spaces'] = TRUE;
             $config['file_name'] = $filename;
             if ( ! is_dir($config['upload_path']) ) die("THE UPLOAD DIRECTORY DOES NOT EXIST");

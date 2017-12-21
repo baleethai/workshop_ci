@@ -2,11 +2,12 @@
 
 1. สร้าง Controller ชื่อว่า Blog.php
 2. สร้าง View ชื่อ blog_view.php
+3. เข้าไปที่ blog\application\config\config.php ตั้งค่า http://localhost:8181/Workshop/Chapter-4-Asset-file-CSS-Javascript-jQuery/blog
 
 CSS
- <link href="<?php echo base_url()."template/"?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="<?php echo base_url()."template/"?>css/blog-home.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>template/css/blog-home.css" rel="stylesheet">
 
 jS
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo base_url(); ?>template/vendor/jquery/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
